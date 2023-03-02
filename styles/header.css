@@ -1,0 +1,12 @@
+header a {
+    display: flex;
+}
+
+header a img {
+    width: 80px;
+}
+
+header a div {
+    display: flex;
+    flex-direction: column;
+}
