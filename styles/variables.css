@@ -1,0 +1,20 @@
+:root{
+
+    --dark-font-color: black;
+    --header-background-overlay: #040b01cf;
+    --btn-color: #126c82;
+    --btn-dark-color: #073641;
+    --header-background: #102C00;
+    --light-font-color: white;
+    --link-selected: #ACF352;
+    --placeholder-font-color: rgba(0, 0, 0, 0.5);
+
+    --primary-font: 'Montserrat', sans-serif;
+    --logo-font: 'logo-title-font', sans-serif;
+}
+
+
+@font-face {
+    font-family: logo-title-font;
+    src: url(../assets/fonts/Berlin\ Sans\ FB\ Demi\ Bold.ttf);
+}

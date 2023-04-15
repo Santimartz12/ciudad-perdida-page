@@ -6,12 +6,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="./assets/icons/logo.svg" type="image/x-icon">
-
-    <!-- TODO: Activar el Reset.css -->
-    <!-- <link rel="stylesheet" href="./styles/reset.css"> -->
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./styles/variables.css">
+    <link rel="stylesheet" href="./styles/general-styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/galeria.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/index.css">
     <title>Ciudad Perdida - Inicio</title>
 </head>
 
@@ -25,79 +31,93 @@
             </div>
         </a>
         <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/atracciones.html">Atracciones</a></li>
-                <li><a href="./pages/acerca-de.html">Acerca de</a></li>
-                <li><a href="./pages/mapa.html">Mapa</a></li>
+            <ul class="link__container">
+                <li><a class="link selected" href="./index.html">Inicio</a></li>
+                <li><a class="link" href="./pages/atracciones.html">Atracciones</a></li>
+                <li><a class="link" href="./pages/acerca-de.html">Acerca de</a></li>
+                <li><a class="link" href="./pages/mapa.html">Mapa</a></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="index">
         <section id="banner">
-            <!-- TODO: Poner los estilos de la imagen en un CSS-->
-            <img src="./assets/images/banner-inicio.webp" width="100%" alt="Foto de la Ciudad Perdida">
+            <img src="./assets/images/banner-inicio.webp" alt="Foto de la Ciudad Perdida">
         </section>
         <section id="descripcion__inicio">
-            <h1>Naturaleza, historia y aventura</h1>
-            <p>La Ciudad Perdida de Falan es un conjunto de ruinas del siglo XVII que pertenecían a una ciudadela
-                española construida junto a las Reales Minas de Santa Ana durante la época colonial. Estas minas, que
-                recibían su nombre por ser propiedad directa del rey de España y donde se extraían oro y plata, fueron
-                entregadas en concesión a los ingleses tras la guerra de independencia por orden del General Bolívar.
-            </p>
+            <h1 class="principal__title">Naturaleza, historia y aventura</h1>
+            <div class="descripcion__texto">
+                <p class="principal__text">La Ciudad Perdida de Falan es un conjunto de ruinas del siglo XVII que pertenecían a una ciudadela española construida junto a las Reales Minas de Santa Ana durante la época colonial. Estas minas, que recibían su nombre por ser propiedad directa del rey de España y donde se extraían oro y plata, fueron entregadas en concesión a los ingleses tras la guerra de independencia por orden del General Bolívar.
+                </p>
 
-            <p>En este lugar, de gran importancia histórica, trabajaron o pasaron por allí destacadas personalidades de
-                la historia colombiana como José Celestino Mutis, Francisco José de Caldas, Alexander von Humboldt y
-                Simón Bolívar, entre otros. Aunque la mayor parte de las estructuras de esta ciudad minera se destinaron
-                hace más de un siglo a la venta de ladrillos en las poblaciones cercanas, aún se conservan túneles,
-                murallas y bodegas de piedra que dan testimonio de su pasado en la selva.</p>
+                <p class="principal__text">En este lugar, de gran importancia histórica, trabajaron o pasaron por allí destacadas personalidades de la historia colombiana como José Celestino Mutis, Francisco José de Caldas, Alexander von Humboldt y Simón Bolívar, entre otros. Aunque la mayor parte de las estructuras de esta ciudad minera se destinaron hace más de un siglo a la venta de ladrillos en las poblaciones cercanas, aún se conservan túneles, murallas y bodegas de piedra que dan testimonio de su pasado en la selva.
+                </p>
+            </div>
         </section>
 
-        <!-- TODO: Ponerle botones para desplazamiento -->
         <section id="galeria">
-            <div>
-                <img src="./assets/images/slider1.webp" alt="001">
+            <h2 class="secondary__title" id="galeria__title">Galería</h2>
+            <div class="galery__container">
+                <img class="image__controller__animation" src="./assets/images/slider1.webp" alt="001">
                 <img src="./assets/images/slider2.webp" alt="002">
                 <img src="./assets/images/slider3.webp" alt="003">
                 <img src="./assets/images/slider4.webp" alt="004">
             </div>
-            <button><a href="./pages/atracciones.html">Ver Atracciones</a></button>
+            <a class="" href="./pages/atracciones.html"><button class="primary__btn">Ver Atracciones</button></a>
         </section>
 
         <section id="contacto">
-            <h2>Ubicación</h2>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3973.901177367943!2d-74.9532589!3d5.1196246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40b3750226c29b%3A0xab6250f87bf73a28!2sReserva%20Natural%20Ciudad%20Perdida%20de%20Falan!5e0!3m2!1ses-419!2sco!4v1677726754022!5m2!1ses-419!2sco" width="60%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="map__container">
+                <h2 class="secondary__title title__ubication">Ubicación</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3973.901177367943!2d-74.9532589!3d5.1196246!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e40b3750226c29b%3A0xab6250f87bf73a28!2sReserva%20Natural%20Ciudad%20Perdida%20de%20Falan!5e0!3m2!1ses-419!2sco!4v1677726754022!5m2!1ses-419!2sco"
+                    width="70%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
 
-            <h2>Contacto</h2>
-            <ul>
-                <li>
-                    <a href="mailto:ciudadperdidafalan@gmail.com">
-                        <img src="" alt="Correo">
-                        ciudadperdidafalan@gmail.com 
-                    </a>
-                </li>
-                <li>
-                    <a href="tel:+573166220606" >
-                        <img src="" alt="Telefono">
-                        316 6220606 
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/ciudadperdidadefalan" target="_blank">
-                        <img src="" alt="Facebook">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.instagram.com/ciudadperdidafalan/" target="_blank">
-                        <img src="" alt="Instagram">
-                    </a>
-                </li>
-            </ul>
-
-            <h2>Agenda con nosotros</h2>
+            <div class="contact__points__container">
+                <h2 class="secondary__title">Contacto</h2>
+                <ul>
+                    <li>
+                        <a class="contact__point" href="mailto:ciudadperdidafalan@gmail.com">
+                            <div class="contact_img" >
+                                <img src="/assets/icons/gmail_icon-icons.com_65438.svg" alt="Correo">
+                            </div>
+                            <p>
+                                ciudadperdidafalan@gmail.com
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="contact__point"  href="tel:+573166220606">
+                            <div class="contact_img" >
+                                <img src="/assets/icons/whatsapp_icon-icons.com_65442.svg" alt="Telefono">
+                            </div>
+                            <p>
+                                316 6220606
+                            </p>
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="contact__point"  href="https://www.facebook.com/ciudadperdidadefalan" target="_blank">
+                            <div class="contact_img" >
+                                <img src="/assets/icons/fb_icon-icons.com_65434.svg" alt="Facebook">
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a  class="contact__point"  href="https://www.instagram.com/ciudadperdidafalan/" target="_blank">
+                            <div  class="contact_img" >
+                                <img src="/assets/icons/instagram_icon-icons.com_65435.svg" alt="Instagram">
+                            </div>
+                        </a>
+                    </li>
+                </ul>    
+            </div>
+            
             <form>
-
+                <h2 class="secondary__title">Agenda con nosotros</h2>
+                
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre">
 
@@ -107,7 +127,7 @@
                 <label for="mensaje">Mensaje</label>
                 <textarea name="mensaje" id="mensaje" cols="30" rows="10"></textarea>
 
-                <button type="submit">Enviar</button>
+                <button type="submit" class="primary__btn send__btn">Enviar</button>
 
             </form>
         </section>

@@ -7,15 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="../assets/icons/logo.svg" type="image/x-icon">
 
-    <!-- TODO: Activar el Reset.css -->
-    <!-- <link rel="stylesheet" href="../styles/reset.css"> -->
+    <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/variables.css">
+    <link rel="stylesheet" href="../styles/general-styles.css">
+    <link rel="stylesheet" href="../styles/mapa.css">
+    <link rel="stylesheet" href="../styles/footer.css">
     <title>Ciudad Perdida - Mapa</title>
 </head>
 
 <body>
     <header>
-        <a href="../index.html">
+        <a href="./index.html">
             <img src="../assets/icons/logo.svg" alt="Inicio">
             <div>
                 <p>Ciudad Perdida Falan</p>
@@ -23,22 +26,22 @@
             </div>
         </a>
         <nav>
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./atracciones.html">Atracciones</a></li>
-                <li><a href="./acerca-de.html">Acerca de</a></li>
-                <li><a href="./mapa.html">Mapa</a></li>
+            <ul class="link__container">
+                <li><a class="link" href="../index.html">Inicio</a></li>
+                <li><a class="link" href="./atracciones.html">Atracciones</a></li>
+                <li><a class="link" href="./acerca-de.html">Acerca de</a></li>
+                <li><a class="link selected" href="./mapa.html">Mapa</a></li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section id="mapa">
-            <h1>Mapa del sendero</h1>
+            <h1 class="principal__title">Mapa del sendero</h1>
             <img src="../assets/images/mapa-sendero.webp" alt="Mapa del sendero">
         </section>
         <section id="recomendaciones">
-            <p>
+            <p class="principal__text">
                 El sendero hacia la Ciudad Perdida de Falan es una experiencia única en Colombia, que combina elementos
                 ecológicos, históricos y arqueológicos. Este camino ha sido declarado patrimonio histórico del Tolima
                 debido a la importancia cultural de las Ruinas de las Reales Minas de Santa Ana. El recorrido incluye la
@@ -46,24 +49,23 @@
                 perdida, todo dentro de un entorno natural preservado en línea con los principios de ecoturismo y
                 sostenibilidad de la Fundación Ecoturística Santa Ana.
             </p>
-            <!-- TODO: Quitar estilos -->
-            <div id="stats__mapa" style="display: flex; gap: 50px;">
-                <div>
+            <div id="stats__mapa">
+                <div class="stats__item">
                     <p>5</p>
-                    <p>Tirolesas</p>
+                    <p class="center-text">Tirolesas</p>
                 </div>
-                <div>
+                <div class="stats__item">
                     <p>40 mts</p>
-                    <p>Altura del torrentismo</p>
+                    <p class="center-text">Altura del torrentismo</p>
                 </div>
-                <div>
+                <div class="stats__item">
                     <p>1200 mts</p>
-                    <p>Distancia del canopy</p>
+                    <p class="center-text">Distancia del canopy</p>
                 </div>
             </div>
         </section>
         <section id="descripcion__lugar">
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Cascada Humboldt</h2>
                 </div>
@@ -75,7 +77,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Cascada Sabio Caldas</h2>
                 </div>
@@ -85,7 +87,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Túnel Roberto Tovar</h2>
                 </div>
@@ -95,7 +97,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Bodega de la Independencia</h2>
                 </div>
@@ -105,7 +107,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Túnel Santa Ana</h2>
                 </div>
@@ -115,7 +117,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Bodega el Galeón</h2>
                 </div>
@@ -125,7 +127,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Bodega Real</h2>
                 </div>
@@ -135,7 +137,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2> Túnel Diego Fallon (Falan)</h2>
                 </div>
@@ -145,7 +147,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2> Descanso de Mutis</h2>
                 </div>
@@ -155,7 +157,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Túnel Bonpland</h2>
                 </div>
@@ -165,7 +167,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2> Túnel del Huyar</h2>
                 </div>
@@ -175,7 +177,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Ruinas Robert El Inglés</h2>
                 </div>
@@ -185,7 +187,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Cascada San Joaquín</h2>
                 </div>
@@ -195,7 +197,7 @@
                     </p>
                 </div>
             </div>
-            <div>
+            <div class="place__container">
                 <div>
                     <h2>Túnel Simón Bolívar</h2>
                 </div>
