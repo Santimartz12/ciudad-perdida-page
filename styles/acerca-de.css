@@ -96,3 +96,75 @@
 .simbolo__2__text p, .simbolo__1__text p{
     text-align: justify;
 }
+
+@media screen and (max-width: 1024px) {
+
+    main{
+        padding-top: 80px;
+    }
+
+    .info__container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .info__container span{
+        display: none;
+    }
+
+    .item0::after, .item2::after {
+        display: none;
+    }
+    
+    .item1::after, .item3::after {
+        display: none;
+    }
+    
+    .timeline {
+        display: none;
+    }
+
+    #simbolos{
+        width: 90%;
+        margin: 50px auto;
+    }
+
+    .simbolo__1__text, .simbolo__2__text {
+        border-radius: 15px;
+    }
+
+    .simbolo__1__img, .simbolo__2__img {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    main{
+        padding-top: 0;
+    }
+
+    #simbolos{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #recorrido__historico {
+        padding-top: 50px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .simbolo__2__text p, .simbolo__1__text p {
+        text-align: justify;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .simbolo__2__text .secondary__title, .simbolo__1__text .secondary__title {
+        font-size: 2rem;
+    }
+}

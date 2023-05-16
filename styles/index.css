@@ -22,7 +22,7 @@
     display: flex;
     gap: 10px;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
     line-height: 1.2;
 }
 
@@ -56,6 +56,13 @@
     animation-timing-function: linear;
     animation-direction: alternate;
     position: relative;
+}
+
+.info__container {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 80%;
 }
 
 @keyframes desplazarbanner {
@@ -169,4 +176,117 @@ label {
     border-radius: 0 20px 20px 0;
     font-family: var(--primary-font);
     color: var(--light-font-color);
+}
+
+@media screen and (max-width: 1024px) {
+
+    #banner {
+        padding: 170px 0 0 0;
+    }
+
+    .contact_img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .contact__points__container ul {
+        gap: 10px;
+        justify-content: center;
+    }
+
+    .title__ubication {
+        font-size: 2rem;
+    }
+
+    .map__container {
+        width: calc(100% - 40px);
+        padding: 20px;
+    }
+
+    .map__container iframe{
+        border: 0;
+        width: 100%;
+        height: 280px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    #banner {
+        padding: 0;
+    }
+
+    .contact_img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contact__points__container {
+        gap: 10px;
+    }
+
+    .contact__points__container ul li a p{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    #banner img {
+        display: none;
+    }
+
+    #descripcion__inicio {
+        background-image: url(../assets/images/banner-inicio.webp) ;
+        background-repeat: no-repeat;
+        background-position: right top;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 60px;
+        gap: 40px;
+    }
+
+    .info__container {
+        background: rgb(1, 26, 19);
+        background: linear-gradient(301deg, rgb(2, 38, 28) 0%, rgb(12, 29, 1) 90%); 
+        width: 100%;
+        padding: 30px;
+        border-radius: 20px;
+    }
+
+    .info__container .principal__title{
+        font-size: 2rem;
+        color: white;
+    }
+
+    .info__container .principal__text {
+        font-size: 0.9rem;
+        color: white;
+        text-align: start;
+    }
+
+    .galery__container {
+        height: 300px;
+    }
+
+    .image__controller__animation {
+        animation-duration: 15s;
+    }
+
+    @keyframes desplazarbanner {
+        from {
+            margin-left: 0px;
+        }
+    
+        to {
+            margin-left: -820px;
+        }
+    }
+
+    .send__btn {
+        width: 80%;
+    }
 }

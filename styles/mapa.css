@@ -75,3 +75,38 @@
     border-radius: 10px 10px 0 0;
     font-family: var(--primary-font);
 }
+
+@media screen and (max-width: 1024px) {
+
+    #mapa {
+        padding-top: 30px;
+    }
+
+    #mapa img{
+        width: 90%;
+    }
+
+    #stats__mapa {
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    .place__container {
+        width: 100%;
+    }
+
+    .stats__item {
+        width: 230px;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .stats__item {
+        width: 100%;
+    }
+}
